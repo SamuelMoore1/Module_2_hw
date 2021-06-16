@@ -120,18 +120,7 @@ def save_qualifying_loans(qualifying_loans):
         csvpath = questionary.text("Enter file path for saved data: ").ask()
         save_csv(Path(csvpath), qualifying_loans)
 
-    #output_path = questionary.text("Enter a file path to rate sheet (csv):").ask()
-    #output_path = Path(output_path)
-    #confirm_qual_loans = questionary.confirm("Do you want to save qualifying loans? (Yes or No):").ask()
-
-    #if confirm_qual_loans == True:
-     #   with open(output_path,"w", newline = " ") as f:
-      #      writer = csv.writer(f, delimeter = ",")
-       #     for data in qualifying_loans:
-        #        writer.writerow(data)
-
-   # else:
-    #    print("Will not save")
+    
 
 def run():
     """The main function for running the script."""
